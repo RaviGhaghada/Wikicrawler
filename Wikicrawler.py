@@ -36,11 +36,6 @@ class Wikicrawler:
                     self.tovisit.put(link)
         return 0
 
-
-    def main(self):
-        while not self.tovisit.empty():
-            self.crawlURL()
-
     def is_acceptable_format(self, link):
         link = str(link)
 
